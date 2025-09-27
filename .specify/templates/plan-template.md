@@ -47,7 +47,34 @@
 ## Constitution Check
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+### Tidy First Philosophy
+- [ ] Changes follow small, safe, reversible steps
+- [ ] Design eliminates complexity rather than managing it
+- [ ] Code communicates intent clearly to future developers
+
+### Modern Toolchain Standards  
+- [ ] Development environment uses required tool versions:
+  - Claude Code AI assistant (@anthropic-ai/claude-code@1.0.127+)
+  - GitHub Copilot CLI (@github/copilot@0.0.328+)
+  - npm package manager (npm@11.6.1+)
+
+### Code Quality Fundamentals
+- [ ] Design optimizes for readability over cleverness
+- [ ] Self-documenting code with meaningful names
+- [ ] Test strategy focuses on confidence, not coverage
+- [ ] Guard clauses and helper variables planned for clarity
+
+### Change-Friendly Design
+- [ ] Tidying commits separated from behavior changes
+- [ ] Built for next developer's understanding
+- [ ] Options created over rigid implementations
+- [ ] Progressive enhancement approach (simple first)
+
+### Testing Strategy
+- [ ] Integration tests prioritized over unit tests
+- [ ] Tests focus on behavior, not implementation
+- [ ] User-facing functionality emphasized
+- [ ] Mocking at network boundaries only
 
 ## Project Structure
 
@@ -216,4 +243,4 @@ directories captured above]
 - [ ] Complexity deviations documented
 
 ---
-*Based on Constitution v2.1.1 - See `/memory/constitution.md`*
+*Based on Constitution v1.0.0 - See `.specify/memory/constitution.md`*

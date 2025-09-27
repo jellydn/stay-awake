@@ -1,50 +1,84 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Version change: Initial → 1.0.0
+Modified principles: All (initial creation)
+Added sections: Core Principles, Development Environment, Code Quality Standards, Governance
+Removed sections: None
+Templates requiring updates: ⚠ pending (need to check template alignment)
+Follow-up TODOs: None
+-->
+
+# macOS Do Not Sleep Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Tidy First Philosophy
+All code changes MUST follow Kent Beck's "Tidy First?" approach: make big changes through small, safe, reversible steps. Code is communication between humans, not just computers. Balance current effort against future options and eliminate problems rather than managing complexity.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+**Rationale**: This ensures maintainable code that future developers can understand and modify safely.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Modern Toolchain Standards
+Development environment MUST maintain current versions of core tools:
+- Claude Code AI assistant (@anthropic-ai/claude-code@1.0.127 or newer)
+- GitHub Copilot CLI (@github/copilot@0.0.328 or newer)  
+- npm package manager (npm@11.6.1 or newer)
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+**Rationale**: Modern AI-assisted development requires up-to-date tooling for optimal performance and security.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Code Quality Fundamentals (NON-NEGOTIABLE)
+- Don't solve problems, eliminate them - reduce complexity rather than manage it
+- Optimize for readability over clever solutions
+- Write self-documenting code with meaningful names
+- Test for confidence, not coverage metrics
+- Use guard clauses and extract helper variables for clarity
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+**Rationale**: Code quality directly impacts development velocity and reduces maintenance burden.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### IV. Change-Friendly Design
+- Separate tidying commits from behavior changes
+- Build for the next developer's understanding
+- Create options over rigid implementations for uncertain requirements
+- Use progressive enhancement - start simple, add complexity when needed
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+**Rationale**: Facilitates safe refactoring and reduces risk when making modifications.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Testing Strategy
+Follow Kent C. Dodds' Testing Trophy approach:
+- Prioritize integration tests over isolated unit tests
+- Test behavior, not implementation details
+- Focus on user-facing functionality
+- Mock at network boundaries, not internal functions
+
+**Rationale**: Provides higher confidence in system behavior while maintaining test maintainability.
+
+## Development Environment
+
+All developers MUST maintain a standardized environment with specified tool versions. Package managers and AI assistants must be kept current to ensure consistent development experience and security compliance.
+
+Global npm packages serve as the foundation for AI-assisted development workflow and must be updated regularly according to release schedules.
+
+## Code Quality Standards
+
+### Performance Practices
+- Optimize for user-centric metrics (loading, interaction)
+- Measure before optimizing - avoid premature micro-optimizations
+- Use progressive enhancement patterns
+- Implement lazy loading for non-critical resources
+
+### Collaboration Standards
+- Express intent clearly through naming and structure
+- Document decisions, not implementation details
+- Write clear commit messages separating tidying from features
+- Focus code reviews on correctness, simplicity, and maintainability
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices. All pull requests and code reviews MUST verify compliance with these principles. 
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+Amendments require:
+1. Documentation of proposed changes and rationale
+2. Team approval through standard review process
+3. Migration plan for existing code if applicable
+
+Complexity MUST be justified against these principles. When in doubt, choose simplicity and eliminate rather than manage problems.
+
+**Version**: 1.0.0 | **Ratified**: 2025-01-27 | **Last Amended**: 2025-01-27
