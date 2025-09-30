@@ -1,5 +1,7 @@
 # macOS Sleep Prevention Utility
 
+> 🤖 **Developed with [Spec-Kit](https://github.com/jellydn/spec-kit)** using GitHub Copilot CLI as the AI agent for systematic feature development
+
 A system tray application that prevents macOS from entering sleep mode for specified durations.
 
 ## Features
@@ -10,6 +12,32 @@ A system tray application that prevents macOS from entering sleep mode for speci
 - 🎯 **Dual Sleep Prevention** - Prevents both system and display sleep
 - 🔄 **Smart State Management** - Visual feedback with different tray icon states
 - 🚫 **Single Instance** - Prevents multiple app launches
+
+## Development with Spec-Kit
+
+This project was developed using the **Spec-Kit methodology** with GitHub Copilot CLI as the AI development agent:
+
+### 🎯 **Systematic Development Process**
+1. **`/specify`** - Created comprehensive feature specification
+2. **`/clarify`** - Resolved ambiguities and edge cases  
+3. **`/plan`** - Generated technical implementation plan
+4. **`/tasks`** - Created ordered, executable task breakdown
+5. **`/implement`** - AI-guided step-by-step implementation
+
+### 🛠️ **AI-Assisted Implementation**
+- **GitHub Copilot CLI** provided intelligent code suggestions and problem-solving
+- **Constitutional principles** ensured maintainable, tidy code following Kent Beck's philosophy
+- **Manual testing approach** focused on real user scenarios over test coverage metrics
+
+### 📋 **Spec-Kit Artifacts**
+All development artifacts are preserved in `specs/001-mac-osx-to/`:
+- `spec.md` - Complete feature specification with user stories
+- `plan.md` - Technical architecture and implementation strategy  
+- `tasks.md` - Ordered implementation tasks (42 tasks across 6 phases)
+- `quickstart.md` - Manual testing scenarios for validation
+- `research.md` - Technology decisions and patterns
+
+This demonstrates how AI agents can systematically deliver complex features through structured specification and planning.
 
 ## Quick Start
 
@@ -87,7 +115,7 @@ make manual-test   # Show testing guide
 │   │   ├── session.rs        # Session management
 │   │   └── commands/         # Tauri commands
 │   └── icons/           # Tray icons
-├── specs/               # Feature specifications
+├── specs/               # Spec-Kit development artifacts
 └── Makefile            # Development commands
 ```
 
@@ -165,8 +193,19 @@ This project follows Kent Beck's "Tidy First?" philosophy:
 
 MIT License - see LICENSE file for details
 
+## About Spec-Kit
+
+[Spec-Kit](https://github.com/jellydn/spec-kit) is a systematic approach to AI-assisted software development that emphasizes:
+- **Clear specifications** before implementation
+- **Constitutional principles** for maintainable code
+- **AI agents** for guided development
+- **Manual validation** over test metrics
+
+This project demonstrates how structured AI collaboration can deliver complex features efficiently and maintainably.
+
 ## Support
 
 - 📋 Issues: Use GitHub Issues for bug reports
 - 📖 Documentation: See `specs/` directory for detailed specifications
 - 🔧 Development: Use `make help` for available commands
+- 🤖 Spec-Kit: Learn more at [github.com/jellydn/spec-kit](https://github.com/jellydn/spec-kit)
