@@ -12,18 +12,18 @@ Using Tauri v2 single project structure:
 
 ## Phase 3.1: Setup & Project Initialization
 
-- [ ] T001 Create Tauri v2 project structure using `npm create tauri-app`
-- [ ] T002 Configure Cargo.toml with required dependencies (serde, tauri, tokio, cocoa)
-- [ ] T003 [P] Configure package.json with Vue.js and TypeScript dependencies
-- [ ] T004 [P] Setup tauri.conf.json for system tray application (no window, tray only)
-- [ ] T005 [P] Configure development environment (Vite, TypeScript, ESLint)
-- [ ] T006 Create tray icon assets (inactive/active/expired states) in src-tauri/icons/
+- [x] T001 Create Tauri v2 project structure using `npm create tauri-app`
+- [x] T002 Configure Cargo.toml with required dependencies (serde, tauri, tokio, cocoa)
+- [x] T003 [P] Configure package.json with Vue.js and TypeScript dependencies
+- [x] T004 [P] Setup tauri.conf.json for system tray application (no window, tray only)
+- [x] T005 [P] Configure development environment (Vite, TypeScript, ESLint)
+- [x] T006 Create tray icon assets (inactive/active/expired states) in src-tauri/icons/
 
 ## Phase 3.2: Backend Core Implementation
 
-- [ ] T007 [P] Implement Duration struct and parsing logic in src-tauri/src/time_parser.rs
-- [ ] T008 [P] Implement SleepSession entity and state management in src-tauri/src/session.rs
-- [ ] T009 Implement macOS sleep prevention using IOKit in src-tauri/src/sleep_manager.rs
+- [x] T007 [P] Implement Duration struct and parsing logic in src-tauli/src/time_parser.rs
+- [x] T008 [P] Implement SleepSession entity and state management in src-tauri/src/session.rs
+- [x] T009 Implement macOS sleep prevention using IOKit in src-tauri/src/sleep_manager.rs
 - [ ] T010 Implement system tray management in src-tauri/src/tray_manager.rs
 - [ ] T011 Create Tauri command: start_sleep_prevention in src-tauri/src/commands/prevention.rs
 - [ ] T012 Create Tauri command: stop_sleep_prevention in src-tauri/src/commands/prevention.rs

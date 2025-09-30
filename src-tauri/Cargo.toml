@@ -1,0 +1,32 @@
+[package]
+name = "macos-sleep-prevention"
+version = "0.1.0"
+description = "macOS Sleep Prevention Utility - System tray app to prevent system and display sleep"
+authors = ["Developer"]
+license = "MIT"
+repository = ""
+edition = "2021"
+rust-version = "1.77.2"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "macos_sleep_prevention_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.4.1", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+log = "0.4"
+tauri = { version = "2.8.5", features = ["tray-icon"] }
+tauri-plugin-log = "2"
+tokio = { version = "1.0", features = ["full"] }
+cocoa = "0.25"
+core-foundation = "0.9"
+objc = "0.2"
+chrono = { version = "0.4", features = ["serde"] }
+toml = "0.8"
+dirs = "5.0"

@@ -1,0 +1,17 @@
+# Build outputs
+dist/
+target/
+node_modules/
+
+# Generated files
+*.min.js
+*.bundle.js
+
+# Tauri specific
+src-tauri/target/
+src-tauri/gen/
+
+# Other
+.vscode/
+.cursor/
+*.log
