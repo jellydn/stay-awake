@@ -1,7 +1,7 @@
 [package]
 name = "macos-sleep-prevention"
 version = "0.1.0"
-description = "macOS Sleep Prevention Utility - System tray app to prevent system and display sleep"
+description = "Stay Awake - macOS system tray app to prevent system and display sleep"
 authors = ["Developer"]
 license = "MIT"
 repository = ""

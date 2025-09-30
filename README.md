@@ -1,8 +1,8 @@
-# macOS Sleep Prevention Utility
+# Stay Awake
 
 > 🤖 **Developed with [Spec-Kit](https://github.com/jellydn/spec-kit)** using GitHub Copilot CLI as the AI agent for systematic feature development
 
-A system tray application that prevents macOS from entering sleep mode for specified durations.
+A macOS system tray application that prevents your Mac from entering sleep mode for specified durations.
 
 ## Features
 
@@ -154,7 +154,7 @@ make install  # Copies to /Applications/
 
 The app stores minimal configuration in:
 ```
-~/Library/Preferences/com.macos-sleep-prevention.toml
+~/Library/Preferences/com.stay-awake.toml
 ```
 
 ## Troubleshooting

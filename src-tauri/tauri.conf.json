@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "macOS Sleep Prevention",
+  "productName": "Stay Awake",
   "version": "0.1.0",
-  "identifier": "com.macos-sleep-prevention.utility",
+  "identifier": "com.stay-awake.utility",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",

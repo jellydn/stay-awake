@@ -1,4 +1,4 @@
-# macOS Sleep Prevention Utility - Development Makefile
+# Stay Awake - Development Makefile
 # Use: make <target>
 
 .PHONY: help setup dev build test clean check lint fix install run-dev run-build deps
@@ -15,7 +15,7 @@ RESET  := \033[0m
 
 ## Help - Show available targets
 help:
-	@echo "$(BLUE)macOS Sleep Prevention Utility - Development Commands$(RESET)"
+	@echo "$(BLUE)Stay Awake - Development Commands$(RESET)"
 	@echo ""
 	@echo "$(GREEN)Quick Start:$(RESET)"
 	@echo "  make setup     - Initial project setup (run this first!)"
@@ -41,7 +41,7 @@ help:
 
 ## Setup - Initial project setup
 setup: deps
-	@echo "$(GREEN)Setting up macOS Sleep Prevention development environment...$(RESET)"
+	@echo "$(GREEN)Setting up Stay Awake development environment...$(RESET)"
 	@echo "$(YELLOW)✓ Dependencies installed$(RESET)"
 	@echo "$(YELLOW)✓ Checking Rust compilation...$(RESET)"
 	@cd src-tauri && cargo check
@@ -121,9 +121,9 @@ clean:
 
 ## Install - Install the built application
 install: build-release
-	@echo "$(YELLOW)Installing macOS Sleep Prevention...$(RESET)"
-	@if [ -d "src-tauri/target/release/bundle/macos/macOS Sleep Prevention.app" ]; then \
-		cp -R "src-tauri/target/release/bundle/macos/macOS Sleep Prevention.app" /Applications/; \
+	@echo "$(YELLOW)Installing Stay Awake...$(RESET)"
+	@if [ -d "src-tauri/target/release/bundle/macos/Stay Awake.app" ]; then \
+		cp -R "src-tauri/target/release/bundle/macos/Stay Awake.app" /Applications/; \
 		echo "$(GREEN)✅ App installed to /Applications/$(RESET)"; \
 	else \
 		echo "$(RED)❌ App bundle not found. Run 'make build-release' first.$(RESET)"; \
@@ -133,18 +133,18 @@ install: build-release
 ## Run Dev - Run development build
 run-dev: build
 	@echo "$(GREEN)Running development build...$(RESET)"
-	@./src-tauri/target/debug/macos-sleep-prevention
+	@./src-tauri/target/debug/stay-awake
 
 ## Run Build - Run release build  
 run-build: build-release
 	@echo "$(GREEN)Running release build...$(RESET)"
-	@./src-tauri/target/release/macos-sleep-prevention
+	@./src-tauri/target/release/stay-awake
 
 ## Logs - Show application logs
 logs:
 	@echo "$(YELLOW)Showing recent application logs...$(RESET)"
 	@echo "$(BLUE)Console logs (last 20 lines):$(RESET)"
-	@log show --predicate 'subsystem contains "com.macos-sleep-prevention.app"' --last 5m | tail -20 || echo "$(YELLOW)No recent logs found$(RESET)"
+	@log show --predicate 'subsystem contains "com.stay-awake.app"' --last 5m | tail -20 || echo "$(YELLOW)No recent logs found$(RESET)"
 
 ## Manual Test - Run manual testing scenarios
 manual-test:
