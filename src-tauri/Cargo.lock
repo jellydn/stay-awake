@@ -1914,7 +1914,7 @@ version = "0.1.0"
 dependencies = [
  "chrono",
  "cocoa",
- "core-foundation 0.9.4",
+ "core-foundation 0.10.1",
  "dirs 5.0.1",
  "log",
  "objc",
