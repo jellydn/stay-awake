@@ -25,7 +25,7 @@ tauri = { version = "2.8.5", features = ["tray-icon"] }
 tauri-plugin-log = "2"
 tokio = { version = "1.0", features = ["full"] }
 cocoa = "0.25"
-core-foundation = "0.9"
+core-foundation = "0.10"
 objc = "0.2"
 chrono = { version = "0.4", features = ["serde"] }
 toml = "0.8"
